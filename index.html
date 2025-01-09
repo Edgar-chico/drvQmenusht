@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <title></title>
   <style>
-    body{
-      background-color:lightblue;
+    body {
+      background-color: lightblue;
       text-align: center;
     }
     .lds-spinner {
@@ -103,7 +103,7 @@
     const AS_URL_BASE = "https://script.google.com/macros/s/AKfycbzRHQ-z5P76NhH0KHR1A00stDzmODOMWAHoQonFjtVHUz0Ixy_rx_rkGGrUlhjl-UKW/exec";
 
     var url = document.location.href;
-    var k = url.substr(url.lastIndexOF("k=")+2);
+    var k = url.substr(url.lastIndexOf("k=")+2);
 
     if(k){
       fetch(AS_URL_BASE+'?k='+k)
